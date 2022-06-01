@@ -1,23 +1,17 @@
-import logo from './logo.svg';
+
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="App">
+        <h1>Page with video and button</h1>
+          <div className='frame'>
+              <h2></h2>
+              <iframe width="668" height="380" src="https://www.youtube.com/embed/UedTcufyrHc?&autoplay=1"frameborder="0" allow="accelerometer; autoplay=1; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        <button className="custom-btn" >place a bet</button>
+      </div>
     </div>
   );
 }
